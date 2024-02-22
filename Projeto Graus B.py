@@ -2,7 +2,7 @@ cinema = []
 informações = []
 lugar = []
 
-def reserva():
+def cadeiras_cinema():
     print('''  
         __1 2 3 4 5 6 7 8 9 1²2²3³
         A · · · · · · · · · · · ·
@@ -13,7 +13,9 @@ def reserva():
         F · · · · · · · · · · · ·
         G · · · · · · · · · · · ·  
           ''')
-    
+
+def reserva():
+    print(cadeiras_cinema)
     nome = input('Insira seu nome: ')
     informações.append(nome)
     fileira = input('Fileira:')
@@ -131,17 +133,7 @@ def menu():
         escolha
 
 def fazer_reservas_m():
-    print('''  
-        __1 2 3 4 5 6 7 8 9 1²2²3³
-        A · · · · · · · · · · · ·
-        B · · · · · · · · · · · ·
-        C · · · · · · · · · · · ·
-        D · · · · · · · · · · · ·
-        E · · · · · · · · · · · ·
-        F · · · · · · · · · · · ·
-        G · · · · · · · · · · · ·  
-          ''')
-    
+    print(cadeiras_cinema)
     nome = input('Insira seu nome: ')
     informações.append(nome)
     linha2 = input('Fileira:')
